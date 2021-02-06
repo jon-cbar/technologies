@@ -4,6 +4,6 @@
 
 ### [virt-manager](/virt-manager.md)
 
-```
+```sh
 $ sudo apt-get install virt-manager
 ```
