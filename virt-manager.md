@@ -16,4 +16,4 @@ $ sudo apt-get install virt-manager
 
 #### References
 
-[1]. [virt-manager Website](https://virt-manager.org/)
+[1] [virt-manager website](https://virt-manager.org/)
