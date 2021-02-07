@@ -1,5 +1,5 @@
 # [Technology How To](readme.md)
 
-## Managing Virtual Machines
+## Virtual Machines
 
-### [virt-manager](virt-manager.md)
+### [Virtual Machine Manager](/virt-manager.md)
