@@ -6,12 +6,12 @@
 
 > The virt-manager application is a desktop user interface for managing virtual machines through libvirt. It primarily targets KVM VMs, but also manages Xen and LXC (linux containers)[1].
 
-### Install
+#### Install
 
-To install it from Debian:
+To install it on Debian:
 
 ```sh
-$ sudo apt-get install virt-manager
+$ apt-get install virt-manager
 ```
 
 #### References
