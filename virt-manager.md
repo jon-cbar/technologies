@@ -14,19 +14,19 @@ To install it on Debian:
 $ apt-get install virt-manager
 ```
 
-### Creating VMs
+#### Creating VMs
 
 You can set some resources when you create a virtual machine on virt-manager, for example:
-- **Name** of the guest instance
-- Number of **vcpus**
-- Guest **memory** allocation
-- **Storage** size
-- Installation **media**
+- *Name* of the guest instance
+- Number of *vcpus*
+- Guest *memory* allocation
+- *Disk* size
+- Installation *media*
 
 This is a way to provision operating systems into virtual machines:
 
 ```sh
-$ virt-install --name vm1 --vcpus 2 --memory 2048 --disk size=25 --cdrom /home/cluster/iso/ubuntu-20.04.1-desktop-amd64.iso
+$ virt-install --name vm1 --vcpus 2 --memory 2048 --disk size=25 --cdrom /home/cluster/iso/your-favorite-distro.iso
 ```
 
 #### References
