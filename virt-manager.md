@@ -74,10 +74,6 @@ $ virsh shutdown vm1
 $ virt-clone --original vm1 --name vm2
 ```
 
-#### Other features
-
-To know more about Virtual Machine Manager, you can access the [virt-manager website](https://virt-manager.org/).
-
 #### References
 
 [1] [virt-manager website](https://virt-manager.org/)
