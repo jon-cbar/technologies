@@ -6,6 +6,9 @@
 
 > The **virt-manager** application is a desktop user interface for managing virtual machines through libvirt [1].
 
+You can use user interface applications to do the following steps, but it wouldn't be funny.
+Then, let's go in the most interestingly.
+
 #### Installing virt-manager
 
 To install it on Debian:
@@ -32,7 +35,14 @@ $ virt-install --name vm1 --vcpus 2 --memory 2048 --disk size=25 --cdrom /home/i
 
 #### Interacting with virtualized OS
 
-There is a lightweight user interface for interacting with the virtualized guest OS.
+First, you need to start the virtual machine, but I didn't find a way to do this using virt-manager.
+Then, we will use virsh to that:
+
+```sh
+$ virsh start vm1 # to start a specified virtual machine
+```
+
+Now, there is a lightweight user interface for interacting with the virtualized guest OS.
 
 ```sh
 $ virt-viewer vm1
@@ -40,11 +50,21 @@ $ virt-viewer vm1
 
 #### Clonning VMs
 
-If you need to clone a virtual machine, you can use a command-line tool for this.
+You must pause or shut off the virtual machine to clone it.
+
+```sh
+$ virsh shutdown vm1
+```
+
+So, you can use a command-line tool for clone in peace.
 
 ```sh
 $ virt-clone --original vm1 --name vm2
 ```
+
+#### Other features
+
+To know more about Virtual Machine Manager, you can access the [virt-manager website](https://virt-manager.org/).
 
 #### References
 
