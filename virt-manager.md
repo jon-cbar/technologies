@@ -35,58 +35,42 @@ $ virt-install --name vm1 --vcpus 2 --memory 2048 --disk size=25 --cdrom /home/i
 
 #### Interacting with virtualized OS
 
-First, you need to start the virtual machine, but I didn't find a way to do this using `virt-manager`.
+There is a lightweight user interface for interacting with the virtualized guest OS: `virt-viewer`.
+
+But, first, you need to start the virtual machine, but I didn't find a way to do this using `virt-manager`.
 Then, we will use `virsh` to that.
 
 ```sh
 $ virsh start vm1
-```
-
-Now, there is a lightweight user interface for interacting with the virtualized guest OS.
-
-```sh
 $ virt-viewer vm1
 ```
 
 #### SSH into a guest VM
 
-Find the virtual machine IP.
+It too easy: find the virtual machine IP and SSH it.
 
 ```sh
 $ virsh domifaddr vm1
-```
-
-And SSH it.
-
-```sh
-$ ssh user@vm1-ip-address
+$ ssh user@<vm1-ip-address>
 ```
 
 The VM system may not have SSH installed by default.
 Then, you need to install it first.
 On Ubuntu, you can do it in an easy way.
-
-```sh
-$ sudo apt install openssh-server
-```
-
 If your system has an enabled firewall, make sure to open the SSH port.
 
 ```sh
+$ sudo apt install openssh-server
 $ sudo ufw allow ssh
 ```
 
 #### Clonning VM
 
 You must pause or shut off the virtual machine to clone it.
-
-```sh
-$ virsh shutdown vm1
-```
-
 So, you can use a command-line tool for clone in peace.
 
 ```sh
+$ virsh shutdown vm1
 $ virt-clone --original vm1 --name vm2
 ```
 
