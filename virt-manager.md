@@ -39,7 +39,7 @@ First, you need to start the virtual machine, but I didn't find a way to do this
 Then, we will use `virsh` to that.
 
 ```sh
-$ virsh start vm1 # to start a specified virtual machine
+$ virsh start vm1
 ```
 
 Now, there is a lightweight user interface for interacting with the virtualized guest OS.
