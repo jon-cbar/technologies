@@ -1,4 +1,4 @@
-# [Technology How To](/readme.md)
+# [Technology How-To](/readme.md)
 
 ## Virtual Machines
 
@@ -56,7 +56,7 @@ $ ssh user@<vm1-ip-address>
 
 The VM system may not have SSH installed by default.
 Then, you need to install it first.
-On Ubuntu, you can do it in an easy way.
+On Ubuntu, you can do it quickly.
 If your system has an enabled firewall, make sure to open the SSH port.
 
 ```sh
@@ -64,10 +64,10 @@ $ sudo apt install openssh-server
 $ sudo ufw allow ssh
 ```
 
-#### Clonning VM
+#### Cloning VM
 
 You must pause or shut off the virtual machine to clone it.
-So, you can use a command-line tool for clone in peace.
+So, you can use a command-line tool: `virt-clone`.
 
 ```sh
 $ virsh shutdown vm1
