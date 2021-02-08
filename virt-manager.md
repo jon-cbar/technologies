@@ -16,7 +16,7 @@ $ apt-get install virt-manager
 
 #### Creating VMs
 
-You can set some resources when you create a virtual machine on virt-manager, for example:
+You can set some resources when you are creating virtual machines on virt-manager, for example:
 
 - *Name* of the guest instance
 - Number of *vcpus*
