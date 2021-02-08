@@ -7,7 +7,7 @@
 > The `virt-manager` application is a desktop user interface for managing virtual machines through `libvirt` [1].
 
 You can use UI applications to do the following steps, but it wouldn't be funny.
-Then, let's go in the most interestingly.
+So, let's go in the most interestingly.
 
 #### Installing virt-manager
 
