@@ -35,7 +35,7 @@ $ virt-install --name vm1 --vcpus 2 --memory 2048 --disk size=25 --cdrom /home/i
 There is a lightweight user interface for interacting with the virtualized guest OS.
 
 ```sh
-$ virt-viewer --name vm1
+$ virt-viewer vm1
 ```
 
 #### Clonning VMs
@@ -43,7 +43,7 @@ $ virt-viewer --name vm1
 If you need to clone a virtual machine, you can use a command-line tool for this.
 
 ```sh
-$ virt-clone --name vm1
+$ virt-clone --original vm1 --name vm2
 ```
 
 #### References
