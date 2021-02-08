@@ -4,7 +4,7 @@
 
 ### [Virtual Machine Manager](/virt-manager.md)
 
-> The virt-manager application is a desktop user interface for managing virtual machines through libvirt. It primarily targets KVM VMs, but also manages Xen and LXC (linux containers)[1].
+> The **virt-manager** application is a desktop user interface for managing virtual machines through libvirt. It primarily targets KVM VMs, but also manages Xen and LXC (linux containers)[1].
 
 #### Installing
 
