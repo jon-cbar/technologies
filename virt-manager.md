@@ -17,13 +17,14 @@ $ apt-get install virt-manager
 #### Creating VMs
 
 You can set some resources when you create a virtual machine on virt-manager, for example:
+
 - *Name* of the guest instance
 - Number of *vcpus*
 - Guest *memory* allocation
 - *Disk* size
 - Installation *media*
 
-This is a way to provision operating systems into virtual machines:
+Although you have a user interface to use, there is a way to provision operating systems from an ISO using a command-line tool:
 
 ```sh
 $ virt-install --name vm1 --vcpus 2 --memory 2048 --disk size=25 --cdrom /home/cluster/iso/your-favorite-distro.iso
