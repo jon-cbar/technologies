@@ -14,7 +14,7 @@ So, let's go in the most interestingly.
 To install it on Ubuntu is easy.
 
 ```sh
-$ apt-get install virt-manager
+$ sudo apt-get install virt-manager
 ```
 
 #### Creating guest VM
