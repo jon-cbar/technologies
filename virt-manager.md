@@ -70,7 +70,7 @@ On Ubuntu, you can do it quickly.
 If your system has an enabled firewall, make sure to open the SSH port.
 
 ```sh
-$ sudo apt install openssh-server
+$ sudo apt-get install openssh-server
 $ sudo ufw allow ssh
 ```
 
