@@ -60,7 +60,7 @@ $ virt-viewer vm1
 It too easy: find the virtual machine IP and SSH it.
 
 ```sh
-$ virsh domifaddr vm1
+$ sudo virsh domifaddr vm1
 $ ssh user@<vm1-ip-address>
 ```
 
@@ -80,8 +80,8 @@ You must pause or shut off the virtual machine to clone it.
 So, you can use a command-line tool: `virt-clone`.
 
 ```sh
-$ virsh shutdown vm1
-$ virt-clone --original vm1 --name vm2
+$ sudo virsh shutdown vm1
+$ sudo virt-clone --original vm1 --name vm2
 ```
 
 #### References
