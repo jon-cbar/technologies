@@ -21,6 +21,7 @@ $ sudo swapoff -a
 
 So, we need a container runtime.
 If you don't have one, I suggest install Docker to start.
+I'm on Ubuntu.
 
 ```sh
 $ sudo apt-get install apt-transport-https ca-certificates curl gnupg-agent software-properties-common
