@@ -81,7 +81,7 @@ So, you can use a command-line tool: `virt-clone`.
 
 ```sh
 $ sudo virsh shutdown vm1
-$ sudo virt-clone --original vm1 --name vm2
+$ sudo virt-clone --original vm1 --name vm2 --auto-clone
 ```
 
 #### References
