@@ -30,7 +30,13 @@ You can set some resources when you are creating virtual machines on `virt-manag
 Although you have a UI to use, there is a way to provision operating systems from an ISO using a command-line tool.
 
 ```sh
-$ virt-install --name vm1 --vcpus 2 --memory 2048 --disk size=25 --cdrom /home/iso/some-os.iso
+$ virt-install --name vm1 --vcpus 2 --memory 2048 --disk size=25 --cdrom /home/server/iso/some-os.iso
+```
+
+##### Creating a VM with some other options
+
+```sh
+$ virt-install --name vm1 --vcpus 2 --memory 2048 --disk path=/media/server/vms/vm1.raw,format=raw,size=25 --cdrom /home/server/iso/some-os.iso
 ```
 
 #### Interacting with virtualized OS
