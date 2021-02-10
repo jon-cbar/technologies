@@ -37,7 +37,7 @@ $ docker --version
 Let's add three Kubernetes commands: `kubeadm`, `kubectl` and `kubelet`.
 
 ```sh
-$ curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
+$ curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
 $ echo "deb http://apt.kubernetes.io/ kubernetes/xenial main" > /etc/apt/sources.list.d/kubernetes.list
 ```
 
