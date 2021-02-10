@@ -70,8 +70,8 @@ On Ubuntu, you can do it quickly.
 If your system has an enabled firewall, make sure to open the SSH port.
 
 ```sh
-$ apt install openssh-server
-$ ufw allow ssh
+$ sudo apt install openssh-server
+$ sudo ufw allow ssh
 ```
 
 #### Cloning VM
