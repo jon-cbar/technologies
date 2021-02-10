@@ -24,10 +24,19 @@ If you don't have one, I suggest install Docker to start.
 
 ```sh
 $ apt-get install apt-transport-https ca-certificates curl gnupg-agent software-properties-common
-$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
 $ add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 $ apt-get install docker-ce docker-ce-cli containerd.io
 $ docker --version
+```
+
+##### Kubernetes Commands
+
+Let's add three Kubernetes commands: `kubeadm`, `kubectl` and `kubelet`.
+
+```sh
+$ curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
+$ echo "deb http://apt.kubernetes.io/ kubernetes/xenial main" > /etc/apt/sources.list.d/kubernetes.list
 ```
 
 #### References
