@@ -14,8 +14,6 @@ $ sudo cp ~/vpn/ca-certificate.crt /usr/share/ca-certificates/extra/ ca-certific
 $ sudo update-ca-certificates
 ```
 
-#### OpenConnect
-
 Install dependencies and remove the previous `openconnect` version.
 
 ```sh
