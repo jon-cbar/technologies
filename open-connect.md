@@ -44,7 +44,7 @@ sudo make install && sudo ldconfig
 Now, just connect using your private key.
 
 ```sh
-sudo openconnect --protocol=gp --certificate private-key.p12 -u username -p password vpn.portal.company.com
+sudo openconnect --protocol=gp --certificate $private-key -u $username -p $password $url
 ```
 
 #### References
