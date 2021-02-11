@@ -5,7 +5,7 @@
 ### [Open Connect](/open-connect.md)
 
 First, let's create a directory to extra certificates of certified authorities in `/usr/share/ca-certificates`.
-Copy certificate file to that.
+Copy certificate file to this directory.
 Finally, update on Ubuntu. 
 
 ```sh
