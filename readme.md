@@ -10,4 +10,4 @@
 
 ## Virtual Private Network (VPN)
 
-### [Open Connect](/open-connect.md)
+### [OpenConnect](/open-connect.md)
