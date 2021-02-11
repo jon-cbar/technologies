@@ -4,6 +4,11 @@
 
 ### [OpenConnect](/open-connect.md)
 
+> OpenConnect is an SSL VPN client initially created to support [Cisco's AnyConnect SSL VPN](http://www.cisco.com/go/asm).
+> It has since been ported to support the Juniper SSL VPN (which is now known as [Pulse Connect Secure](https://www.pulsesecure.net/products/connect-secure/)), and the [Palo Alto Networks GlobalProtect SSL VPN](https://www.paloaltonetworks.com/features/vpn) [1].
+
+#### CA certificate
+
 First, let's create a directory to extra certificates of certified authorities in `/usr/share/ca-certificates`.
 Copy certificate file to this directory.
 Finally, update on Ubuntu. 
@@ -14,6 +19,8 @@ sudo cp ~/vpn/ca-certificate.crt /usr/share/ca-certificates/extra/ ca-certificat
 sudo update-ca-certificates
 ```
 
+#### Installing and connecting
+
 Install dependencies and remove the previous `openconnect` version.
 
 ```sh
@@ -22,7 +29,7 @@ sudo apt-get install build-essential gettext autoconf automake libproxy-dev \
 sudo apt-get remove openconnect --autoremove
 ```
 
-Download source code, build it, make it and run it [1]. 
+Download source code, build it, make it and run it. 
 
 ```sh
 git clone https://gitlab.com/openconnect/openconnect.git
