@@ -17,7 +17,8 @@ $ sudo update-ca-certificates
 Install dependencies and remove the previous `openconnect` version.
 
 ```sh
-$ sudo apt-get install build-essential gettext autoconf automake libproxy-dev libxml2-dev libtool vpnc-scripts pkg-config zlib1g-dev libssl-dev
+$ sudo apt-get install build-essential gettext autoconf automake libproxy-dev \
+  libxml2-dev libtool vpnc-scripts pkg-config zlib1g-dev libssl-dev
 $ sudo apt-get remove openconnect --autoremove
 ```
 
