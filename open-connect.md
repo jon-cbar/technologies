@@ -2,7 +2,7 @@
 
 ## Virtual Private Network (VPN)
 
-### [Open Connect](/open-connect.md)
+### [OpenConnect](/open-connect.md)
 
 First, let's create a directory to extra certificates of certified authorities in `/usr/share/ca-certificates`.
 Copy certificate file to this directory.
@@ -22,7 +22,7 @@ sudo apt-get install build-essential gettext autoconf automake libproxy-dev \
 sudo apt-get remove openconnect --autoremove
 ```
 
-Download source code, build it, make it and run it. 
+Download source code, build it, make it and run it [1]. 
 
 ```sh
 git clone https://gitlab.com/openconnect/openconnect.git
@@ -39,3 +39,7 @@ Now, just connect using your private key.
 ```sh
 sudo openconnect --protocol=gp --certificate private-key.p12 -u username -p password vpn.portal.company.com
 ```
+
+#### References
+
+[1] [OpenConnect website](https://www.infradead.org/openconnect/)
