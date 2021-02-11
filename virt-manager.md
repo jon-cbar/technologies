@@ -14,7 +14,7 @@ So, let's go in the most interestingly.
 To install it on Ubuntu is easy.
 
 ```sh
-$ sudo apt-get install virt-manager
+sudo apt-get install virt-manager
 ```
 
 #### Creating guest VM
@@ -30,7 +30,7 @@ You can set some resources when you are creating virtual machines on `virt-manag
 Although you have a UI to use, there is a way to provision operating systems from an ISO using a command-line tool.
 
 ```sh
-$ sudo virt-install --name vm1 --vcpus 2 --memory 2048 \
+sudo virt-install --name vm1 --vcpus 2 --memory 2048 \
   --disk size=25 \
   --cdrom /home/server/iso/some-os.iso
 ```
@@ -38,7 +38,7 @@ $ sudo virt-install --name vm1 --vcpus 2 --memory 2048 \
 ##### Creating a VM with other options
 
 ```sh
-$ sudo virt-install --name vm1 --vcpus 2 --memory 2048 \
+sudo virt-install --name vm1 --vcpus 2 --memory 2048 \
   --disk path=/media/server/vms/vm1.raw,format=raw,size=25 \
   --cdrom /home/server/iso/some-os.iso
 ```
@@ -51,8 +51,8 @@ But, first, you need to start the virtual machine, but I didn't find a way to do
 Then, we will use `virsh` to that.
 
 ```sh
-$ sudo virsh start vm1
-$ virt-viewer vm1
+sudo virsh start vm1
+virt-viewer vm1
 ```
 
 #### SSH into a guest VM
@@ -60,8 +60,8 @@ $ virt-viewer vm1
 It too easy: find the virtual machine IP and SSH it.
 
 ```sh
-$ sudo virsh domifaddr vm1
-$ ssh user@<vm1-ip-address>
+sudo virsh domifaddr vm1
+ssh user@<vm1-ip-address>
 ```
 
 The VM system may not have SSH installed by default.
@@ -70,8 +70,8 @@ On Ubuntu, you can do it quickly.
 If your system has an enabled firewall, make sure to open the SSH port.
 
 ```sh
-$ sudo apt-get install openssh-server
-$ sudo ufw allow ssh
+sudo apt-get install openssh-server
+sudo ufw allow ssh
 ```
 
 #### Cloning VM
@@ -80,8 +80,8 @@ You must pause or shut off the virtual machine to clone it.
 So, you can use a command-line tool: `virt-clone`.
 
 ```sh
-$ sudo virsh shutdown vm1
-$ sudo virt-clone --original vm1 --name vm2 --auto-clone
+sudo virsh shutdown vm1
+sudo virt-clone --original vm1 --name vm2 --auto-clone
 ```
 
 #### References
