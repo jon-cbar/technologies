@@ -15,7 +15,7 @@ Finally, update on Ubuntu.
 
 ```sh
 sudo mkdir /usr/share/ca-certificates/extra
-sudo cp ~/vpn/ca-certificate.crt /usr/share/ca-certificates/extra/ ca-certificate.crt
+sudo cp ~/vpn/ca-certificate.crt /usr/share/ca-certificates/extra/ca-certificate.crt
 sudo update-ca-certificates
 ```
 
