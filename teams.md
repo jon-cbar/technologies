@@ -10,9 +10,7 @@ Teams primarily competes with the similar service Slack, offering workspace chat
 On Ubuntu, it's too easy: download and install.
 
 ```sh
-wget \
-  "https://teams.microsoft.com/downloads/desktopurl?env=production&plat=linux&arch=x64&download=true&linuxArchiveType=deb" \
-  -O teams.deb
+wget "https://teams.microsoft.com/downloads/desktopurl?env=production&plat=linux&arch=x64&download=true&linuxArchiveType=deb" -O teams.deb
 sudo apt install ./teams.deb
 ```
 
