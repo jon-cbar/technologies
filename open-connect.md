@@ -14,7 +14,7 @@ Copy certificate file to this directory.
 Finally, update on Ubuntu. 
 
 ```sh
-sudo mkdir /usr/share/ca-certificates/extra
+sudo mkdir /usr/local/share/ca-certificates/extra
 sudo cp ~/vpn/ca-certificate.crt /usr/share/ca-certificates/extra/ca-certificate.crt
 sudo update-ca-certificates
 ```
@@ -45,11 +45,11 @@ Now, just connect using your private key.
 Remember to replace parameters:
 - `$url`: VPN URL
 - `$privatekey`: private key file
-- `$keypassword`: passphrase for the certificate file
+- `$passphrase`: passphrase for the certificate file
 - `$user`: login username
 
 ```sh
-sudo openconnect $url --protocol=gp --certificate $privatekey --key-password=$keypassword --user=$user
+sudo openconnect $url --protocol=gp --certificate $privatekey --key-password=$passphrase --user=$user
 ```
 
 #### References
