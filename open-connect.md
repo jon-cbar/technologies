@@ -42,9 +42,14 @@ sudo make install && sudo ldconfig
 ```
 
 Now, just connect using your private key.
+Remember to replace parameters:
+- `$url`: VPN URL
+- `$privatekey`: private key file
+- `$keypassword`: passphrase for the certificate file
+- `$user`: login username
 
 ```sh
-sudo openconnect --protocol=gp vpn.company.com --certificate private-key.p12 -u username -p password
+sudo openconnect $url --protocol=gp --certificate $privatekey --key-password=$keypassword --user=$user
 ```
 
 #### References
