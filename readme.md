@@ -1,5 +1,9 @@
 # [Technology How To](/readme.md)
 
+## Communication
+
+### [Teams](/teams.md)
+
 ## Containers
 
 ### [Kubernetes](/kubernetes.md)
