@@ -14,8 +14,8 @@ Copy certificate file to this directory.
 Finally, update on Ubuntu. 
 
 ```sh
-sudo mkdir /usr/local/share/ca-certificates/extra
-sudo cp ~/vpn/ca-certificate.crt /usr/local/share/ca-certificates/extra/ca-certificate.crt
+sudo mkdir /usr/share/ca-certificates/extra
+sudo cp ~/vpn/ca-certificate.crt /usr/share/ca-certificates/extra/ca-certificate.crt
 sudo update-ca-certificates
 ```
 
