@@ -46,11 +46,12 @@ Now, just connect using your private key.
 Remember to replace parameters:
 - `$url`: VPN URL
 - `$privatekey`: private key file
-- `$passphrase`: passphrase for the certificate file
+- `$keypassword`: passphrase for the certificate file
 - `$user`: login username
 
 ```sh
-sudo openconnect $url --protocol=gp --certificate $privatekey --key-password=$passphrase --user=$user
+sudo openconnect $url --protocol=gp --no-dtls --certificate \
+  $privatekey --key-password=$keypassword --user=$user
 ```
 
 #### References
