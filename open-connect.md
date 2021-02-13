@@ -25,7 +25,7 @@ Install dependencies and remove the previous `openconnect` version.
 
 ```sh
 sudo apt-get install build-essential gettext autoconf automake libproxy-dev \
-  libxml2-dev libtool vpnc-scripts pkg-config zlib1g-dev libssl-dev
+  libxml2-dev libtool vpnc-scripts pkg-config zlib1g-dev libssl-dev libgnutls28-dev
 sudo apt-get remove openconnect --autoremove
 ```
 
@@ -38,7 +38,8 @@ git checkout globalprotect
 ./autogen.sh
 ./configure
 make
-sudo make install && sudo ldconfig
+sudo make install
+sudo ldconfig
 ```
 
 Now, just connect using your private key.
