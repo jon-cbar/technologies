@@ -2,16 +2,24 @@
 
 ## Communication
 
-### [Teams](/teams.md)
+### [Teams](/communication/teams.md)
 
 ## Containers
 
-### [Kubernetes](/kubernetes.md)
+### [Kubernetes](/containers/kubernetes.md)
 
-## Virtual Machines
+### Packaging
 
-### [Virtual Machine Manager](/virt-manager.md)
+### [Yarn](/packaging/yarn.md)
+
+## Programming Languages
+
+### [Node](/programming-languages/node.md)
+
+## Virtualization
+
+### [Virtual Machine Manager](/virtualization/virt-manager.md)
 
 ## Virtual Private Network (VPN)
 
-### [OpenConnect](/open-connect.md)
+### [OpenConnect](/vpn/open-connect.md)

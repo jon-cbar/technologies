@@ -1,8 +1,8 @@
 # [Technology How-To](/readme.md)
 
-## Virtual Machines
+## Virtualization
 
-### [Virtual Machine Manager](/virt-manager.md)
+### [Virtual Machine Manager](/virtualization/virt-manager.md)
 
 > The `virt-manager` application is a desktop user interface for managing virtual machines through `libvirt` [1].
 

@@ -2,7 +2,7 @@
 
 ## Virtual Private Network (VPN)
 
-### [OpenConnect](/open-connect.md)
+### [OpenConnect](/vpn/open-connect.md)
 
 > OpenConnect is an SSL VPN client initially created to support [Cisco's AnyConnect SSL VPN](http://www.cisco.com/go/asm).
 > It has since been ported to support the Juniper SSL VPN (which is now known as [Pulse Connect Secure](https://www.pulsesecure.net/products/connect-secure/)), and the [Palo Alto Networks GlobalProtect SSL VPN](https://www.paloaltonetworks.com/features/vpn) [1].
