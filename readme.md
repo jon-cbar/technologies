@@ -14,7 +14,7 @@
 
 ## Programming Languages
 
-### [Node](/programming-languages/node.md)
+### [Node.js](/programming-languages/nodejs.md)
 
 ## Virtualization
 
