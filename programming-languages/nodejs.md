@@ -17,7 +17,7 @@ sudo apt-get install npn
 npm -v
 ```
 
-### Change Node version
+#### Change version
 
 ```sh
 sudo npm cache clean -f
