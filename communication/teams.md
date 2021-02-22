@@ -5,7 +5,7 @@
 ### [Teams](/communication/teams.md)
 
 > Microsoft Teams is a proprietary business communication platform developed by Microsoft, as part of the Microsoft 365 family of products.
-Teams primarily competes with the similar service Slack, offering workspace chat and videoconferencing, file storage, and application integration [1].
+> Teams primarily competes with the similar service Slack, offering workspace chat and videoconferencing, file storage, and application integration [1].
 
 On Ubuntu, it's too easy: download and install.
 
