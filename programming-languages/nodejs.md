@@ -12,8 +12,20 @@
 curl -sL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
 sudo apt-get install -y nodejs
 node -v
+nodejs -v
 sudo apt-get install npn
 npm -v
+```
+
+### Change Node version
+
+```sh
+sudo npm cache clean -f
+sudo npm install -g n
+sudo n latest
+node -v
+sudo n stable
+node -v
 ```
 
 #### References
